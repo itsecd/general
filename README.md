@@ -6,7 +6,7 @@
 
 - [Стилевой шаблон Word Самарского университета](https://github.com/itsecd/general/blob/main/layout/su-template.docx)
 - [Официальный стандарт Самарского университета по оформлению текста](https://github.com/itsecd/general/blob/main/layout/sto_02068410_004_2019.pdf)
-- [ГОСТ 7.1-2003 о правилах библиографического описания](https://github.com/itsecd/general/blob/main/layout/sto_02068410_004_2019.pdf)
+- [ГОСТ 7.1-2003 о правилах библиографического описания](https://github.com/itsecd/general/blob/main/layout/GOST-7.1-2003.pdf)
 
 ### Поясняющие видео
 
