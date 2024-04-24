@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="numeric" default-locale="ru" version="1.0" demote-non-dropping-particle="sort-only">
+  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>ГОСТ 7.1-2003</title>
+    <id>http://www.somwhere.org/csl/style/CompOptLit</id>
+    <link href="http://code.google.com/p/zotero-gost-rus-bibliography/" rel="self"/>
+    <author>
+      <name>Sergey Timoshenko</name>
+      <email>s_t_56@bk.ru</email>
+    </author>
+    <contributor>
+      <name>Marcus Akoev</name>
+      <email>marcus.akoev@gmail.com</email>
+    </contributor>
+    <contributor>
+      <name>Victor Fedoseev</name>
+      <email>vicanfed@gmail.com</email>
+    </contributor>
+    <category citation-format="numeric"/>
+    <category field="engineering"/>
+    <category field="generic-base"/>
+    <updated>2018-05-08T11:24:13+00:00</updated>
+  </info>
+  <macro name="citation-number">
+    <text variable="citation-number" font-style="normal" vertical-align="baseline"/>
+  </macro>
+  <macro name="title">
+    <text variable="title" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="container-title">
+    <text variable="container-title" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="genre">
+    <text variable="genre" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="number">
+    <text variable="number" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="editor">
+    <text variable="editor" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="translator">
+    <text variable="translator" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="publisher">
+    <text variable="publisher" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="publisher-place">
+    <text variable="publisher-place" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="number-of-volumes">
+    <text variable="number-of-volumes" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="issue">
+    <text variable="issue" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="URL">
+    <text variable="URL" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="DOI">
+    <text variable="DOI" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="edition">
+    <text variable="edition" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="collection-title">
+    <text variable="collection-title" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="collection-number">
+    <text variable="collection-number" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="volume">
+    <text variable="volume" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="page">
+    <text variable="page" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="firstauthor">
+    <names variable="first-author">
+      <name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="author1">
+    <names variable="author" font-weight="bold">
+      <name delimiter-precedes-last="never" et-al-min="2" et-al-use-first="1" et-al-subsequent-min="0" et-al-subsequent-use-first="0" initialize-with="." name-as-sort-order="first"/>
+    </names>
+  </macro>
+  <macro name="responsibility">
+    <names variable="responsibility">
+      <name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="firstauthor-short">
+    <names variable="first-author">
+      <name font-weight="normal" font-style="normal" initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="responsibility-short">
+    <names variable="responsibility">
+      <name font-weight="normal" font-style="normal" initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="otherauthor">
+    <names variable="other-author">
+      <name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="priorityNumbers">
+    <names variable="priorityNumbers">
+      <name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="author-one">
+    <choose>
+      <if variable="other-author" match="none">
+        <text macro="firstauthor"/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="author">
+    <names variable="author">
+      <name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="author-full">
+    <names variable="author">
+      <name name-as-sort-order="all" sort-separator=" " delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="author-short">
+    <names variable="author">
+      <name font-weight="normal" font-style="normal" initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+  <macro name="year-date">
+    <date variable="issued" font-weight="normal" font-style="normal">
+      <date-part name="year" form="long" suffix=""/>
+    </date>
+  </macro>
+  <macro name="note">
+    <text variable="note" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="number-of-pages">
+    <text variable="number-of-pages" font-style="normal" vertical-align="baseline" font-weight="normal" text-case="" form=""/>
+  </macro>
+  <macro name="date-full">
+    <date variable="issued" font-weight="normal" font-style="normal">
+      <date-part name="day" form="numeric-leading-zeros" prefix="" suffix="."/>
+      <date-part name="month" form="numeric-leading-zeros" suffix="."/>
+      <date-part name="year" form="long" suffix="."/>
+    </date>
+  </macro>
+  <macro name="date-accessed-full-lan">
+    <choose>
+      <if variable="language" match="none">
+        <date variable="accessed" font-weight="normal" font-style="normal">
+          <date-part name="day" form="numeric-leading-zeros" prefix=" (дата обращения: " suffix="."/>
+          <date-part name="month" form="numeric-leading-zeros" suffix="."/>
+          <date-part name="year" form="long" suffix=")."/>
+        </date>
+      </if>
+      <else>
+        <date variable="accessed" font-weight="normal" font-style="normal">
+          <date-part name="day" form="numeric-leading-zeros" prefix=" (accessed date: " suffix="."/>
+          <date-part name="month" form="numeric-leading-zeros" suffix="."/>
+          <date-part name="year" form="long" suffix=")."/>
+        </date>
+      </else>
+    </choose>
+  </macro>
+  <macro name="author-citation">
+    <names variable="author">
+      <name form="short"/>
+    </names>
+  </macro>
+  <macro name="ipc-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="note" prefix=" МПК " suffix=""/>
+      </if>
+      <else>
+        <text macro="note" prefix=" IPC " suffix=""/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="title-text-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="title" prefix="" suffix=""/>
+      </if>
+      <else>
+        <text macro="title" prefix="" suffix=""/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="title-electronic-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="title" prefix="" suffix=" [Электронный ресурс]"/>
+      </if>
+      <else>
+        <text macro="title" prefix="" suffix=" [Electronic resource]"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="URL-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="URL" prefix=" — Режим доступа: " suffix=" "/>
+      </if>
+      <else>
+        <text macro="URL" prefix=" — Mode of access: " suffix=" "/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="title-text-report-lan">
+    <text macro="title-text-lan" suffix=" "/>
+    <text macro="collection-title" prefix=" : " suffix=" "/>
+    <text macro="genre" prefix="(" suffix=") "/>
+  </macro>
+  <macro name="number-patent-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="number" prefix=" пат. " suffix=""/>
+      </if>
+      <else>
+        <text macro="number" prefix=" pat. " suffix=""/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="page-report-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="page" prefix=" — " suffix=" с."/>
+      </if>
+      <else>
+        <text macro="page" prefix=" — " suffix=" p."/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="collection-title-sernum">
+    <text macro="collection-number" prefix="" suffix=", "/>
+    <text macro="collection-title" prefix="" suffix=""/>
+  </macro>
+  <macro name="priority-num">
+    <text variable="priorityNumbers" prefix=" — № " suffix=""/>
+  </macro>
+  <macro name="collection-title-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="collection-title-sernum" prefix=" Сер. " suffix="."/>
+      </if>
+      <else>
+        <text macro="collection-title-sernum" prefix=" Ser. " suffix="."/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="volume-book-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="number-of-volumes" prefix="в " suffix=" т."/>
+        <text macro="volume" prefix=" Т. " suffix=""/>
+      </if>
+      <else>
+        <text macro="number-of-volumes" prefix="in " suffix=" vol."/>
+        <text macro="volume" prefix=" Vol. " suffix=""/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="volume-issue-lan">
+    <choose>
+      <if variable="language" match="none">
+        <choose>
+          <if variable="volume issue" match="all">
+            <text macro="volume" prefix=" — Т. " suffix=""/>
+            <text macro="issue" prefix="(" suffix=")."/>
+          </if>
+          <else>
+            <choose>
+              <if variable="volume" match="none">
+                <text macro="issue" prefix=" — " suffix="."/>
+              </if>
+              <else>
+                <text macro="volume" prefix=" — Т. " suffix="."/>
+              </else>
+            </choose>
+          </else>
+        </choose>
+      </if>
+      <else>
+        <choose>
+          <if variable="volume issue" match="all">
+            <text macro="volume" prefix=" — Vol. " suffix=""/>
+            <text macro="issue" prefix="(" suffix=")."/>
+          </if>
+          <else>
+            <choose>
+              <if variable="volume" match="none">
+                <text macro="issue" prefix=" — " suffix="."/>
+              </if>
+              <else>
+                <text macro="volume" prefix=" — Vol. " suffix="."/>
+              </else>
+            </choose>
+          </else>
+        </choose>
+      </else>
+    </choose>
+  </macro>
+  <macro name="page-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="page" prefix=" — С. " suffix="."/>
+      </if>
+      <else>
+        <text macro="page" prefix=" — P. " suffix="."/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="doi-lan">
+    <text macro="DOI" prefix=" — DOI: " suffix="."/>
+  </macro>
+  <macro name="author-short-lan">
+    <choose>
+      <if variable="other-author">
+        <choose>
+          <if variable="language" match="none">
+            <text macro="firstauthor-short" prefix=" / " suffix=", "/>
+            <text macro="responsibility-short" prefix="" suffix=" [и др.]"/>
+          </if>
+          <else>
+            <text macro="firstauthor-short" prefix=" / " suffix=", "/>
+            <text macro="responsibility-short" prefix="" suffix=" [et al.]"/>
+          </else>
+        </choose>
+      </if>
+      <else>
+        <text macro="author-short" prefix=" / " suffix=""/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="author-report-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="firstauthor" prefix=" рук. " suffix="; "/>
+        <text macro="responsibility" prefix=" исполн.: " suffix=""/>
+        <text macro="otherauthor" prefix=", " suffix=""/>
+      </if>
+      <else>
+        <text macro="firstauthor" prefix=" manager " suffix="; "/>
+        <text macro="responsibility" prefix=" contractors: " suffix=""/>
+        <text macro="otherauthor" prefix=", " suffix=""/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="number-of-pages-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="number-of-pages" prefix=" — " suffix=" с."/>
+      </if>
+      <else>
+        <text macro="number-of-pages" prefix=" — " suffix=" p."/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="pub-lan">
+    <choose>
+      <if variable="language" match="none">
+        <text macro="date-full" prefix="; опубл. " suffix="."/>
+      </if>
+      <else>
+        <text macro="date-full" prefix="; publ. " suffix="."/>
+      </else>
+    </choose>
+  </macro>
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout prefix="[" suffix="]" delimiter="-" font-weight="normal" font-style="normal" vertical-align="baseline">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+    <bibliography entry-spacing="0" second-field-align="flush">
+    <layout>
+      <choose>
+        <if type="bill book graphic legal_case motion_picture report song" match="any">
+          <text macro="author1" prefix="" suffix=" "/>
+          <text macro="title-text-lan"/>
+          <text macro="volume-book-lan" prefix=": "/>
+          <text macro="collection-title" prefix=": " suffix=""/>
+          <text macro="author-short-lan"/>
+          <text macro="publisher-place" prefix=". — " suffix=": "/>
+          <text macro="publisher" prefix="" suffix=", "/>
+          <text macro="year-date" prefix="" suffix="."/>
+          <text macro="number-of-pages-lan"/>
+        </if>
+        <else-if type="chapter paper-conference" match="any">
+          <group>
+            <text macro="author1" prefix="" suffix=" "/>
+          </group>
+          <group>
+            <text macro="title-text-lan"/>
+            <text macro="author-short-lan"/>
+            <text macro="container-title" prefix=" // " suffix=""/>
+            <text macro="volume-book-lan" prefix=", "/>
+            <text macro="collection-title" prefix=": " suffix="."/>
+            <text macro="year-date" prefix=" — " suffix="."/>
+            <text macro="page-lan"/>
+            <text macro="doi-lan"/>
+          </group>
+        </else-if>
+        <else-if type="article-journal article-magazine" match="any">
+          <text macro="author1" prefix="" suffix=" "/>
+          <text macro="title-text-lan"/>
+          <text macro="author-short-lan"/>
+          <text macro="container-title" prefix=" // " suffix="."/>
+          <text macro="collection-title-lan" prefix=" " suffix="."/>
+          <text macro="year-date" prefix=" — " suffix="."/>
+          <text macro="volume-issue-lan"/>
+          <text macro="page-lan"/>
+          <text macro="doi-lan"/>
+        </else-if>
+        <else-if type="article-newspaper">
+          <text macro="author1" prefix="" suffix=" "/>
+          <text macro="title-text-lan"/>
+          <text macro="author-short-lan"/>
+          <text macro="container-title" prefix=" // " suffix="."/>
+          <text macro="date-full" prefix=" — "/>
+          <text macro="page-lan"/>
+          <text macro="doi-lan"/>
+        </else-if>
+        <else-if type="report">
+          <text macro="author1" prefix="" suffix=" "/>
+          <text macro="title-text-report-lan"/>
+          <text macro="publisher" prefix=" / " suffix="; "/>
+          <text macro="author-report-lan" prefix=" " suffix=""/>
+          <text macro="publisher-place" prefix=". — " suffix=", "/>
+          <text macro="year-date" prefix="" suffix="."/>
+          <text macro="page-report-lan"/>
+          <text macro="number" prefix=" — " suffix="."/>
+        </else-if>
+        <else-if type="thesis">
+          <text macro="author1" prefix="" suffix=" "/>
+          <text macro="title-text-lan" suffix=" : "/>
+          <text macro="genre" prefix="" suffix="."/>
+          <text macro="author-full" prefix=" / " suffix="."/>
+          <text macro="publisher" prefix=" — " suffix=", "/>
+          <text macro="year-date" prefix="" suffix="."/>
+          <text macro="page-report-lan"/>
+        </else-if>
+        <else-if type="patent">
+          <text macro="author1" prefix="" suffix=" "/>
+          <text macro="title-text-lan" suffix=" : "/>
+          <text macro="number-patent-lan"/>
+          <text macro="ipc-lan" prefix=": "/>
+          <text macro="author" prefix=" / " suffix="."/>
+          <text macro="priority-num"/>
+          <text macro="pub-lan"/>
+          <text macro="page-report-lan"/>
+        </else-if>
+        <else-if type="webpage">
+          <text macro="title-electronic-lan"/>
+          <text macro="author-short-lan"/>
+          <text macro="container-title" prefix=" // " suffix="."/>
+          <text macro="year-date" prefix=". — [" suffix="]."/>
+          <text macro="URL-lan"/>
+          <text macro="date-accessed-full-lan"/>
+        </else-if>
+        <else>
+          <text macro="author-one" prefix="" suffix=" "/>
+          <text macro="title-text-lan"/>
+          <text macro="author-short-lan"/>
+          <text macro="container-title" prefix=" // " suffix="."/>
+          <text macro="collection-title-lan" prefix=" " suffix="."/>
+          <text macro="year-date" prefix=" — " suffix="."/>
+          <text macro="volume-issue-lan"/>
+          <text macro="page-lan"/>
+          <text macro="doi-lan"/>
+        </else>
+      </choose>
+    </layout>
+  </bibliography>
+</style>
